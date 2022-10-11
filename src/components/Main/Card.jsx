@@ -1,9 +1,10 @@
 const Card=(data)=>{
     console.log(data)
+    const{title,image,desc}=data;
     return(
 
         <div className="cards">
-            <h1>{data.title}</h1>
+            <h1>{title}</h1>
         </div>
     )
 }
