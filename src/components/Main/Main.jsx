@@ -1,8 +1,19 @@
+
+
 import './Main.scss';
+import {data} from '../../helper/data';
 const Main=()=>{
+    console.log(data);
     return (
-        <div className="card">
-            <h1>card</h1>
+
+        <div className="card-container">
+            {data.map((item)=>{
+                return(
+<><h1>{item.title}</h1>
+<img src={item.image} alt="img" /></>
+                )
+            })}
+            
         </div>
     )
 }
