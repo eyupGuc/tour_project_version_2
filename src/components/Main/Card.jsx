@@ -3,7 +3,7 @@ const Card=(data)=>{
     return(
 
         <div className="cards">
-            <h1>Card</h1>
+            <h1>{data.title}</h1>
         </div>
     )
 }
